@@ -1,8 +1,8 @@
-ARGET = hi
+TARGET = helloworld
 all := $(TARGET)
 CFLAGS ?= -Wall -O
 
-OBJS = hi.o
+OBJS = helloworld.o
 
 $(TARGET): $(OBJS)
         $(CC) $(CFLAGS) $(LDFLAGS) $^ -o $@
