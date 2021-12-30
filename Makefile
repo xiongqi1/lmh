@@ -5,9 +5,9 @@ CFLAGS ?= -Wall -O
 OBJS = lmh.o
 
 $(TARGET): $(OBJS)
-        $(CC) $(CFLAGS) $(LDFLAGS) $^ -o $@
+	$(CC) $(CFLAGS) $(LDFLAGS) $^ -o $@
 
 clean:
-        $(RM) $(TARGET) $(OBJS)
+	$(RM) $(TARGET) $(OBJS)
 
 .PHONY: all clean install uninstall
