@@ -1,8 +1,8 @@
-TARGET = mao
+TARGET = lmh
 all := $(TARGET)
 CFLAGS ?= -Wall -O
 
-OBJS = mao.o
+OBJS = lmh.o
 
 $(TARGET): $(OBJS)
         $(CC) $(CFLAGS) $(LDFLAGS) $^ -o $@
